@@ -74,6 +74,8 @@ nav a:hover {
     text-align: right;
     margin-right: 20px;
     vertical-align: text-bottom;
+    color: rgb(0, 255, 191);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .About-Us p {
@@ -97,7 +99,7 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.Our-Work-Video, .Our-Work-Diptych, .Our-Work-For-Patients {
+.Our-Work-Video, .Our-Work-Images {
     margin: 10px;
     opacity: 60%;
     border-width: 0.2cm;
@@ -108,8 +110,8 @@ nav a:hover {
     box-shadow: 4px 4px 2px violet;
 }
 
-.Our-Work-Video:hover, .Our-Work-Diptych:hover, .Our-Work-For-Patients:hover {
-    opacity: 100%
+.Our-Work-Video:hover, .Our-Work-Images:hover {
+    opacity: 100%;
 }
 
 .Our-Work-Video {
@@ -119,25 +121,25 @@ nav a:hover {
     background-image: url(../images/Video.png);
     background-size: 100%;
     background-position: center;
-}
-
-.Our-Work-Diptych{
-    background-image: url(../images/Díptico.jpg);
-    background-position: bottom;
-}
-
-.Our-Work-For-Patients{
-    background-image: url(../images/IMG_2094.JPG);
-    background-position: center;
-}
-
-.Our-Work-Diptych, .Our-Work-For-Patients{
-    display: inline-block;
-    padding: 25px;
-    height: 100%;
-    background-color: #0052b0;
-    background-size: 100%;
     background-repeat: no-repeat;
+}
+
+.Our-Work-Diptych, .Our-Work-For-Patients, .More-of-Our-Work {
+    display: inline-block;
+}
+
+.Our-Work-Images {
+    padding: 0px;
+    height: 250px;
+    max-width: fit-content;
+    background-color: #0052b0;
+    background-repeat: no-repeat;
+}
+
+.Our-Work-Diptych, .Our-Work-For-Patients, .More-of-Our-Work {
+    position: relative;
+    text-align: left;
+    color:rgba(128, 0, 128, 0.8)
 }
 
 .Our-Work ul {
@@ -149,17 +151,19 @@ nav a:hover {
     text-decoration: none;
 }
 
-.Our-Work-Video h2, .Our-Work-Diptych h2, .Our-Work-For-Patients h2 {
-    margin-left: 15px;
-    margin-right: 15px;
+.Our-Work-Video h2, .Our-Work-Diptych h2, .Our-Work-For-Patients h2, .More-of-Our-Work h2 {
+    position: absolute;
+    top: 20px;
+    left: 30px;
     background-color: rgba(128, 0, 128, 0.8);
     color: white;
 }
 
 .Our-Work-For-Patients h3 {
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 5px;
+    position: absolute;
+    top: 50px;
+    left: 35px;
+    font-size: 16px;
     background-color: rgba(128, 0, 53, 0.8);
     color: white;
 }
@@ -205,5 +209,9 @@ footer h1
 @media screen and (max-width: 768px){
     .Our-Work {
         flex-direction: column;
+    }
+    .Our-Work-Images{
+        width: 40%;
+        height: auto;
     }
 }
