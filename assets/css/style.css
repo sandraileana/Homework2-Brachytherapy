@@ -130,8 +130,9 @@ nav a:hover {
 
 .Our-Work-Images {
     padding: 0px;
-    height: 250px;
-    max-width: 800px;
+    height: 200px;
+    margin right: 10px;
+    max-width: 100%;
     background-color: #0052b0;
     background-repeat: no-repeat;
 }
@@ -211,7 +212,7 @@ footer h1
         flex-direction: column;
     }
     .Our-Work-Images{
-        width: 40%;
+        width: 50%;
         height: auto;
     }
 }
